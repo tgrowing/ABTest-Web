@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+
+  <script src="https://beaconcdn.qq.com/sdk/3.1.42/beacon_web.min.js"></script>
+  <script src="https://res.abtest.qq.com/tabc_saas/tabc_sdk.min.js" charset="utf-8"> </script>
+
+  <script type="text/javascript">
+    tabc.init({
+      appkey: "申请的appkey",
+      guid: '用户的唯一id',
+      profiles: {"age": 22},
+      timeout: 3000,
+      antiFlicker: true,
+      antiFlickerTimeout: 500,
+      onInit: function (testVars) {
+        console.log('onInit');
+        console.log(testVars);
+      },
+      onNetData: function(testVars) {
+        console.log('onNetData');
+        console.log(testVars);
+      }
+    });
+
+  </script>
+
+</head>
+<body>
+  <h1>test page</h1>
+  <button id="someButton">点我</button>
+</body>
+</html>
