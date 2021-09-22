@@ -4,13 +4,7 @@ TAB云实验平台web sdk
 
 ## Installation
 
-1. install using tnpm
-
-```bash
-$ tnpm install @tencent/tabc_web_sdk
-```
-
-2. import script
+1. import script
 
 ```html
 <!-- 使用灯塔sdk上报实验事件 -->
